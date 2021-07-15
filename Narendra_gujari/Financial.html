@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+           
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Hachi.png">
+    
+       <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> 
+    
+    <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+    
+    <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+  
+              <!--Remix Icon CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+        <!-- Font Lineicons -->
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  
+    <!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    
+    <!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+    
+    <!-- Animate Text -->
+        <link rel="stylesheet" href="css/animate-text.css">
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Sufia StyleShet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/reset.css">  
+        <link rel="stylesheet" href="css/responsive.css"> 
+    
+    <!-- Maheraj Template Color -->
+    <link rel="stylesheet" href="css/color/color1.css">
+    
+
+    <!--[if lt IE 9]>
+           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="#" id="colors">  
+    </head>
+
+
+<header>                                   
+
+
+    <!-- Start Header -->
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-12 col-xs-12">
+            <!-- Logo -->
+            <div class="logo">
+              
+            </div>
+            <!--/ End Logo -->
+            <div class="mobile-nav"></div>
+          </div>
+          <div class="col-md-20 col-sm-15 col-xs-15">
+            <div class="nav-area">
+              <!-- Main Menu -->
+              <nav class="mainmenu">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav menu">
+                     <li><a class="active" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a ><i class="fa fa-rocket"></i>Propfit & Loss and Balance Sheet</a></li>
+                    <li><a href="SUMMARY_OF_FINANCIAL_STATEMENT.html" onclick="nar();"/><i class="fa fa-briefcase"></i>Cash Flow and Financial Summary</a></li>
+                    <li><a href="eligibility_and_ratios.html" onclick="nar();"/><i class="fa fa-history"></i>Eligibility and Accounting Ratios</a></li>
+                    <li><a href="emical.html"><i class="fa fa-star"></i>EMI Calculation</a></li>  
+                  </ul>
+                  <ul class="social-icon">
+                  </ul>
+                  </div>
+              </nav>
+              <!--/ End Main Menu -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ End Header -->
+
+
+
+<body >
+
+
+
+  <section id="personal-area6">
+      <div class="personal-area1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">  
+               
+               <table>
+                  <tr>
+                <td style="background-color: #5ABCAE;"><h1>Profit & Loss and Balance Sheet</h1></td>
+                <br>
+              </tr>
+                </table>
+<br><br>
+ <table>
+   
+    <tr>
+    <th rowspan="1" colspan="2" style="background-color: #58716F;">STATEMENT OF PROFIT AND LOSS FOR THE YEAR ENDED</th>
+    <th style="background-color: #58716F;">YEAR 1</th>
+    <th style="background-color: #58716F;">YEAR 2</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="background-color: #58716F;">CONTINUING BUSINESS OPERATIONS / ACTIVITIES ONLY</td>
+    <td style="background-color: #58716F;"><p id="py2">Hello World!</p></td>
+    <td style="background-color: #58716F;"><p id="cy2">Hello World!</p></td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="3">TOP LINE</td>
+    <td >Gross Revenue</td>
+    <td ><input id = "gross_revenue" type="number"  class="form_apply form-control"  /></td>
+    <td ><input id = "gross_revenu1" type="number"  class="form_apply form-control"  /></td>
+  </tr>
+<tr>
+    <td >Other Income</td>
+    <td ><input id = "other_income" type="number" name="other_income" class="form_apply form-control"  /></td>
+    <td ><input id = "other_income1" type="number" name="other_income1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Less: Excise Duty</td>
+    <td ><input id = "less_excise" type="number" name="less_excise" class="form_apply form-control"  /></td>
+    <td ><input id = "less_excise1" type="number" name="less_excise1" class="form_apply form-control"  /></td>
+  </tr>
+   <tr>
+    <td colspan="2">NET REVENUE FROM OPERATIONS</td>
+    <td><input id = "net_revenue" type="number" name="net_revenue" class="form_apply form-control"  readonly/></td>
+    <td><input id = "net_revenue1" type="number" name="net_revenue1" class="form_apply form-control"  readonly/></td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="5">DIRECT EXPENSES</td>
+    <td >Opening Stock</td>
+    <td ><input id = "opening_stock" type="number" name="opening_stock" class="form_apply form-control"  /></td>
+    <td ><input id = "opening_stock1" type="number" name="opening_stock1" class="form_apply form-control"  /></td>
+  </tr>
+<tr>
+    <td >Purchases </td></td>
+    <td ><input id = "purchase" type="number" name="purchase" class="form_apply form-control"  /></td>
+    <td ><input id = "purchase1" type="number" name="purchase1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Closing Stock</td>
+    <td ><input id = "closing_stock" type="number" name="closing_stock" class="form_apply form-control"  /></td>
+    <td ><input id = "closing_stock1" type="number" name="closing_stock1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Manufacturing Exps</td>
+    <td ><input id = "manu_exp" type="number" name="manu_exp" class="form_apply form-control"  /></td>
+    <td ><input id = "manu_exp1" type="number" name="manu_exp1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Wages/Labour Exps / Other Direct Exps if any</td>
+    <td ><input id = "wage_exp" type="number" name="wage_exp" class="form_apply form-control"  /></td>
+    <td ><input id = "wage_exp1" type="number" name="wage_exp1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td colspan="2">COST OF GOODS SOLD</td>
+    <td><input id = "cost_sale" type="number" name="cost_sale" class="form_apply form-control" readonly /></td>
+    <td><input id = "cost_sale1" type="number" name="cost_sale1" class="form_apply form-control" readonly /></td>
+  </tr>
+  <tr>
+    <td colspan="2">GROSS PROFIT</td>
+    <td><input id = "gross_profit" type="number" name="gross_profit" class="form_apply form-control" readonly /></td>
+    <td><input id = "gross_profit1" type="number" name="gross_profit1" class="form_apply form-control" readonly /></td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="5">INDIRECT EXPENSES</td>
+    <td >Administrative Expenses</td>
+    <td ><input id = "admin_exp" type="number" name="admin_exp" class="form_apply form-control"  /></td>
+    <td ><input id = "admin_exp1" type="number" name="admin_exp1" class="form_apply form-control"  /></td>
+  </tr>
+<tr>
+    <td >Selling & Distribution Expenses</td></td>
+    <td ><input id = "selling_dis" type="number" name="selling_dis" class="form_apply form-control"  /></td>
+    <td ><input id = "selling_dis1" type="number" name="selling_dis1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Finance Cost</td>
+    <td ><input id = "finance_cost" type="number" name="finance_cost" class="form_apply form-control"  /></td>
+    <td ><input id = "finance_cost1" type="number" name="finance_cost1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Employee Benefit Expenses</td>
+    <td ><input id = "employee_benefit" type="number" name="employee_benefit" class="form_apply form-control"  /></td>
+    <td ><input id = "employee_benefit1" type="number" name="employee_benefit1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Other Indirect Expenses</td>
+    <td ><input id = "other_indirect_expenses" type="number" name="other_indirect_expenses" class="form_apply form-control"  /></td>
+    <td ><input id = "other_indirect_expenses1" type="number" name="other_indirect_expenses1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td colspan="2">EBITDA (Earnings Before Interest Tax Depreciation & Amorts)</td>
+    <td><input id = "ebitda" type="number" name="ebitda" class="form_apply form-control" readonly /></td>
+    <td><input id = "ebitda1" type="number" name="ebitda1" class="form_apply form-control" readonly /></td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="3">FINANCE COSTS (EMI)</td>
+    <td >Interest on OD/CC A/c</td>
+    <td ><input id = "interest_od" type="number" name="interest_od" class="form_apply form-control"  /></td>
+    <td ><input id = "interest_od1" type="number" name="interest_od1" class="form_apply form-control"  /></td>
+  </tr>
+<tr>
+    <td >Interest to FI/Banks (Other than OD/CC a/c)</td></td>
+    <td ><input id = "interest_fi" type="number" name="interest_fi" class="form_apply form-control"  /></td>
+    <td ><input id = "interest_fi1" type="number" name="interest_fi1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Depreciation</td>
+    <td ><input id = "depreciation" type="number" name="depreciation" class="form_apply form-control"  /></td>
+    <td ><input id = "depreciation1" type="number" name="depreciation1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td colspan="2">PROFIT BEFORE TAX (Continuing Business Operations / Activities)</td>
+    <td><input id = "profit_bf_tax" type="number" name="profit_bf_tax" class="form_apply form-control" readonly /></td>
+    <td><input id = "profit_bf_tax1" type="number" name="profit_bf_tax1" class="form_apply form-control" readonly /></td>
+  </tr>
+  <tr>
+    <td colspan="2">Tax - Current Year Only</td>
+    <td><input id = "tax_current" type="number" name="tax_current" class="form_apply form-control"  /></td>
+    <td><input id = "tax_current1" type="number" name="tax_current1" class="form_apply form-control"  /></td>
+  </tr>
+   <tr>
+    <td colspan="2">PROFIT AFTER TAX (Continuing Business Operations / Activities)</td>
+    <td><input id = "profit_af_tax" type="number" name="profit_af_tax" class="form_apply form-control" readonly /></td>
+    <td><input id = "profit_af_tax1" type="number" name="profit_af_tax1" class="form_apply form-control" readonly /></td>
+  </tr>
+
+ </table>
+
+
+<br><br>
+
+<table>
+  <tr>
+    <th rowspan="1" colspan="2">Balance Sheet</th>
+    <td><p id="py3">Hello World!</p></td>
+    <td><p id="cy3">Hello World!</p></td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="1">A</td>
+    <td colspan="3" >EQUITY AND LIABILITIES</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="6">Shareholders' Funds</td>
+    <td >Share capital</td>
+    <td ><input id = "share_cap" type="number" name="share_cap" class="form_apply form-control"  /></td>
+    <td ><input id = "share_cap1" type="number" name="share_cap1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Reserves and surplus(Other than Revaluation Reserve)</td></td>
+    <td ><input id = "reserve_surplus" type="number" name="reserve_surplus" class="form_apply form-control"  /></td>
+    <td ><input id = "reserve_surplus1" type="number" name="reserve_surplus1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Money received against share warrants</td></td>
+    <td ><input id = "money_receive" type="number" name="money_receive" class="form_apply form-control"  /></td>
+    <td ><input id = "money_receive1" type="number" name="money_receive1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Loans from Directors/Promoters/Partnerscoming on Loan</td></td>
+    <td ><input id = "loans_dir" type="number" name="loans_dir" class="form_apply form-control"  /></td>
+    <td ><input id = "loans_dir1" type="number" name="loans_dir1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Revaluation Reserve</td></td>
+    <td ><input id = "revalue_res" type="number" name="revalue_res" class="form_apply form-control"  /></td>
+    <td ><input id = "revalue_res1" type="number" name="revalue_res1" class="form_apply form-control"  /></td>
+    
+  </tr>
+   <tr>
+    <td >TOTAL SHAREHOLDERS' FUNDS</td></td>
+    <td><input id = "total_share" type="number" name="total_share" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_share1" type="number" name="total_share1" class="form_apply form-control" readonly /></td>
+    
+  </tr>
+   
+  <tr>
+    <td colspan="1" rowspan="8">NON CURRENT <br> (Life / Maturity > 1 Yr from B/S date)</td>
+    <td >Secured Loans from Banks/Financial Institutions</td>
+    <td ><input id = "non_secured_loan" type="number" name="no_current" class="form_apply form-control"  /></td>
+    <td ><input id = "non_secured_loan1" type="number" name="no_current1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Unsecured Loans from Banks/Financial Institutions</td></td>
+    <td ><input id = "non_unsecured_loan" type="number" name="unsecured_loan" class="form_apply form-control"  /></td>
+    <td ><input id = "non_unsecured_loan1" type="number" name="unsecured_loan1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >other unsecured Loans(other than banks / FIs / promoters)</td></td>
+    <td ><input id = "other_unsecured" type="number" name="other_unsecured" class="form_apply form-control"  /></td>
+    <td ><input id = "other_unsecured1" type="number" name="other_unsecured1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Loans from Directors/Promoters/PartnersNot coming on Loan</td></td>
+    <td ><input id = "loans_dir_no_loan" type="number" name="loans_dir_no_loan" class="form_apply form-control"  /></td>
+    <td ><input id = "loans_dir_no_loan1" type="number" name="loans_dir_no_loan1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td>Other long-term liabilities (debentures etc)</td></td>
+    <td><input id = "other_long_term" type="number" name="other_long_term" class="form_apply form-control"  /></td>
+    <td><input id = "other_long_term1" type="number" name="other_long_term1" class="form_apply form-control"  /></td>
+    
+  </tr>
+   <tr>
+    <td >Deferred tax liabilities (net)</td></td>
+    <td ><input id = "deferred_tax" type="number" name="deferred_tax" class="form_apply form-control"  /></td>
+    <td ><input id = "deferred_tax1" type="number" name="deferred_tax1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td>Long-term provisions</td></td>
+    <td ><input id = "long_term_pro" type="number" name="long_term_pro" class="form_apply form-control"  /></td>
+    <td ><input id = "long_term_pro1" type="number" name="long_term_pro1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >TOTAL NON CURRENT LIABILITIES</td></td>
+    <td><input id = "total_non" type="number" name="total_non" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_non1" type="number" name="total_non1" class="form_apply form-control" readonly /></td>
+    
+  </tr>
+  
+  <tr>
+    <td colspan="1" rowspan="8">CURRENT <br> (Life / Maturity <= 1 Yr from B/S date)</td>
+    <td >Secured Loans from Banks/Financial Institutions</td>
+    <td ><input id = "current_secured_loan" type="number" name="secured_loan" class="form_apply form-control"  /></td>
+    <td ><input id = "current_secured_loan1" type="number" name="secured_loan1" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Unsecured Loans from Banks/Financial Institutions</td></td>
+    <td ><input id = "current_unsecured_loan_bank" type="number" name="unsecured_loan_bank" class="form_apply form-control"  /></td>
+    <td ><input id = "current_unsecured_loan_bank1" type="number" name="unsecured_loan_bank1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Other Short-term liabilities (Other than banks / FIs / promoters)</td></td>
+    <td ><input id = "other_short" type="number" name="other_short" class="form_apply form-control"  /></td>
+    <td ><input id = "other_short1" type="number" name="other_short1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Working Capital Limits (OD/CC)</td></td>
+    <td ><input id = "working_capital" type="number" name="working_capital" class="form_apply form-control"  /></td>
+    <td ><input id = "working_capital1" type="number" name="working_capital1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td>Trade payables (Sundry Creditors)</td></td>
+    <td><input id = "trade_payables" type="number" name="trade_payables" class="form_apply form-control"  /></td>
+    <td><input id = "trade_payables1" type="number" name="trade_payables1" class="form_apply form-control"  /></td>
+    
+  </tr>
+   <tr>
+    <td >Other current liabilities</td></td>
+    <td ><input id = "other_current" type="number" name="other_current" class="form_apply form-control"  /></td>
+    <td ><input id = "other_current1" type="number" name="other_current1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td>Short-term provisions</td></td>
+    <td ><input id = "short_term" type="number" name="short_term" class="form_apply form-control"  /></td>
+    <td ><input id = "short_term1" type="number" name="short_term1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >TOTAL CURRENT LIABILITIES</td></td>
+    <td><input id = "total_current" type="number" name="total_current" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_current1" type="number" name="total_current1" class="form_apply form-control" readonly /></td>
+    
+  </tr>
+  <tr>
+    <td colspan="2">TOTAL - EQUITY & LIABILITIES</td>
+    <td><input id = "total_equity" type="number" name="total_equity" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_equity1" type="number" name="total_equity1" class="form_apply form-control" readonly /></td>
+  </tr>
+  
+    <tr>
+    <td colspan="1" rowspan="1">B</td>
+    <td >ASSETS</td>
+    <td ><p id="cy1">Hello World!</p></td>
+    <td ><p id="py1">Hello World!</p></td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="16">NON CURRENT<br>(Life / Maturity > 1 Yr from B/S date)</td>
+    <td colspan ="3">Non-current assets - Business Related Only</td>
+  </tr>
+  <tr>
+    <td >Net Fixed assets (Plant & Machinery)</td></td>
+    <td ><input id = "net_fixed_pl" type="number" name="net_fixed_pl" class="form_apply form-control"  /></td>
+    <td ><input id = "net_fixed_pl1" type="number" name="net_fixed_pl1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Net Fixed assets (Others)</td></td>
+    <td ><input id = "net_fixed" type="number" name="net_fixed" class="form_apply form-control"  /></td>
+    <td ><input id = "net_fixed1" type="number" name="net_fixed1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Total Net Fixed Assets</td></td>
+    <td><input id = "total_net_fixed" type="number" name="total_net_fixed" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_net_fixed1" type="number" name="total_net_fixed1" class="form_apply form-control" readonly /></td>
+    
+  </tr>
+  <tr>
+    <td >Non-current investmentsbusiness related</td></td>
+    <td ><input id = "non_current_invest" type="number" name="non_current_invest" class="form_apply form-control"  /></td>
+    <td ><input id = "non_current_invest1" type="number" name="non_current_invest1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Deferred tax assets (net)</td></td>
+    <td ><input id = "deferred_tax_as" type="number" name="deferred_tax_as" class="form_apply form-control"  /></td>
+    <td ><input id = "deferred_tax_as1" type="number" name="deferred_tax_as1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Long-term loans and advancesbusiness related</td></td>
+    <td ><input id = "long_term" type="number" name="long_term" class="form_apply form-control"  /></td>
+    <td ><input id = "long_term1" type="number" name="long_term1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Loans to Group Companies(If coming on loan)</td></td>
+    <td ><input id = "loan_group" type="number" name="loan_group" class="form_apply form-control"  /></td>
+    <td ><input id = "loan_group1" type="number" name="loan_group1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Other non-current assetsbusiness related</td></td>
+    <td ><input id = "other_no_current_as" type="number" name="other_no_current_as" class="form_apply form-control"  /></td>
+    <td ><input id = "other_no_current_as1" type="number" name="other_no_current_as1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <!-- <tr>
+    <td >Non-current assets - NOT Business Related & Intangible Assets</td></td>
+    <td ><input id = "non_current_as" type="number" name="non_current_as" class="form_apply form-control"  /></td>
+    <td ><input id = "non_current_as1" type="number" name="non_current_as1" class="form_apply form-control"  /></td>
+    
+  </tr> -->
+  <tr>
+    <td >Intangible Assets</td></td>
+    <td ><input id = "int_asset" type="number" name="int_asset" class="form_apply form-control"  /></td>
+    <td ><input id = "int_asset1" type="number" name="int_asset1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Non-current investments in subsidiary</td></td>
+    <td ><input id = "no_current_invest" type="number" name="no_current_invest" class="form_apply form-control"  /></td>
+    <td ><input id = "no_current_invest1" type="number" name="no_current_invest1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Long-term loans and advances not business related</td></td>
+    <td ><input id = "lt_loan" type="number" name="lt_loan" class="form_apply form-control"  /></td>
+    <td ><input id = "lt_loan1" type="number" name="lt_loan1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Loans to Promoters/Directors/Partners (Whether on Loan or not)</td></td>
+    <td ><input id = "loan_promoters" type="number" name="loan_promoters" class="form_apply form-control"  /></td>
+    <td ><input id = "loan_promoters1" type="number" name="loan_promoters1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Loans to Group Companies (If not coming on loan)</td></td>
+    <td ><input id = "loan_group_no" type="number" name="loan_group_no" class="form_apply form-control"  /></td>
+    <td ><input id = "loan_group_no1" type="number" name="loan_group_no1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  <tr>
+    <td >Other non-current assets not business related</td></td>
+    <td ><input id = "other_non_cu_asset" type="number" name="other_non_cu_asset" class="form_apply form-control"  /></td>
+    <td ><input id = "other_non_cu_asset1" type="number" name="other_non_cu_asset1" class="form_apply form-control"  /></td>
+    
+  </tr>
+  
+   <tr>
+    <td colspan="1" rowspan="1">TOTAL NON CURRENT ASSETS</td>
+    <td><input id = "total_no_cu_as" type="number" name="total_no_cu_as" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_no_cu_as1" type="number" name="total_no_cu_as1" class="form_apply form-control" readonly /></td>
+  </tr>
+  
+  <tr>
+    <td colspan="1" rowspan="9">CURRENT ASSETS </td>
+    <td colspan = "3">Current assets - Business Related Only</td>
+  </tr>
+     <tr>
+    <td >Investments maturing within 1 Year</td>
+    <td ><input id = "invest_mat" type="number" name="invest_mat" class="form_apply form-control"  /></td>
+    <td ><input id = "invest_mat1" type="number" name="invest_mat1" class="form_apply form-control"  /></td>
+  </tr>
+     <tr>
+    <td >Inventories</td>
+    <td ><input id = "invent" type="number" name="invent" class="form_apply form-control"  /></td>
+    <td ><input id = "invent1" type="number" name="invent1" class="form_apply form-control"  /></td>
+  </tr>
+     <tr>
+    <td >Trade receivables (Sundry Debtors) <= 6 Months aging</td>
+    <td ><input id = "trade_receive" type="number" name="trade_receive" class="form_apply form-control"  /></td>
+    <td ><input id = "trade_receive1" type="number" name="trade_receive1" class="form_apply form-control"  /></td>
+  </tr>
+     <tr>
+    <td >Trade receivables (Sundry Debtors) > 6 Months aging</td>
+    <td ><input id = "trade_receive2" type="number" name="trade_receive2" class="form_apply form-control"  /></td>
+    <td ><input id = "trade_receive3" type="number" name="trade_receive3" class="form_apply form-control"  /></td>
+  </tr>
+     <tr>
+    <td >Cash and cash equivalents</td>
+    <td ><input id = "cash_eq" type="number" name="cash_eq" class="form_apply form-control"  /></td>
+    <td ><input id = "cash_eq1" type="number" name="cash_eq1" class="form_apply form-control"  /></td>
+  </tr>
+     <tr>
+    <td >Short-term loans and advances</td>
+    <td ><input id = "short_loan" type="number" name="short_loan" class="form_apply form-control"  /></td>
+    <td ><input id = "short_loan1" type="number" name="short_loan1" class="form_apply form-control"  /></td>
+  </tr>
+     <tr>
+    <td >Other current assets</td>
+    <td ><input id = "ot_cu_as" type="number" name="ot_cu_as" class="form_apply form-control"  /></td>
+    <td ><input id = "ot_cu_as1" type="number" name="ot_cu_as1" class="form_apply form-control"  /></td>
+  </tr>
+    <!--  <tr>
+    <td >Current assets - Not Business Related</td>
+    <td ><input id = "cu_as_no_bs" type="number" name="cu_as_no_bs" class="form_apply form-control"  /></td>
+    <td ><input id = "cu_as_no_bs1" type="number" name="cu_as_no_bs1" class="form_apply form-control"  /></td>
+  </tr> -->
+     <tr>
+    <td >Current assets - NOT Business Related <br>(Investments, Loans to Promoters/Grp Cos,etc)</td>
+    <td ><input id = "cu_as_no_bs_in" type="number" name="cu_as_no_bs_in" class="form_apply form-control"  /></td>
+    <td ><input id = "cu_as_no_bs_in1" type="number" name="cu_as_no_bs_in1" class="form_apply form-control"  /></td>
+  </tr>
+  
+     <tr>
+    <td colspan="2" rowspan="1">TOTAL - CURRENT ASSETS</td>
+    <td><input id = "total_current_as" type="number" name="total_current_as" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_current_as1" type="number" name="total_current_as1" class="form_apply form-control" readonly /></td>
+  </tr>
+  
+     <tr>
+    <td colspan="2" rowspan="1">TOTAL - ASSETS</td>
+    <td><input id = "total_assets" type="number" name="total_assets" class="form_apply form-control" readonly /></td>
+    <td><input id = "total_assets1" type="number" name="total_assets1" class="form_apply form-control" readonly /></td>
+  </tr>
+  
+     <tr>
+    <td colspan="2" rowspan="1">Difference : ASSETS - EQUITY & LIABILITY</td>
+    <td><input id = "df_as_eq_li" type="number" name="df_as_eq_li" class="form_apply form-control" readonly /></td>
+    <td><input id = "df_as_eq_li1" type="number" name="df_as_eq_li1" class="form_apply form-control" readonly /></td>
+  </tr>
+
+  
+</table>     
+
+
+<br><br>
+    
+
+
+</div>
+</div>
+</div>
+</div>
+</section>        
+     
+
+
+
+<script type="text/javascript" src="Financial_script.js"></script>
+
+</body>
+</html>
