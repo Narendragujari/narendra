@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+           
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Hachi.png">
+    
+       <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> 
+    
+    <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+    
+    <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+  
+              <!--Remix Icon CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+        <!-- Font Lineicons -->
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  
+    <!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    
+    <!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+    
+    <!-- Animate Text -->
+        <link rel="stylesheet" href="css/animate-text.css">
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Sufia StyleShet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/reset.css">  
+        <link rel="stylesheet" href="css/responsive.css"> 
+    
+    <!-- Maheraj Template Color -->
+    <link rel="stylesheet" href="css/color/color1.css">
+    
+
+    <!--[if lt IE 9]>
+           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="#" id="colors">  
+    </head>
+
+
+<header>                                   
+
+
+    <!-- Start Header -->
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-12 col-xs-12">
+            <!-- Logo -->
+            <div class="logo">
+              
+            </div>
+            <!--/ End Logo -->
+            <div class="mobile-nav"></div>
+          </div>
+          <div class="col-md-20 col-sm-15 col-xs-15">
+            <div class="nav-area">
+              <!-- Main Menu -->
+              <nav class="mainmenu">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav menu">
+                     <li><a class="active" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="Financial.html"><i class="fa fa-rocket"></i>Propfit & Loss and Balance Sheet</a></li>
+                    <li><a href="SUMMARY_OF_FINANCIAL_STATEMENT.html"><i class="fa fa-briefcase"></i>Cash Flow and Financial Summary</a></li>
+                    <li><a><i class="fa fa-history"></i>Eligibility and Accounting Ratios</a></li>
+                    <li><a href="emical.html"><i class="fa fa-star"></i>EMI Calculation</a></li>  
+                  </ul>
+                  </div>
+              </nav>
+              <!--/ End Main Menu -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ End Header -->
+
+
+
+
+<body >
+
+   <section id="personal-area6">
+      <div class="personal-area1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+
+                <table>
+                  <tr>
+                <td style="background-color: #5ABCAE;"><h1>Eligibility and Accounting Ratios</h1></td>
+                <br>
+              </tr>
+                </table>
+<br><br>
+
+
+<table >
+  <tr>
+      <td ></td>
+    <td colspan="1">KEY FINANCIAL INDICATORS</td>
+    <td>year1</td>
+    <td>year2</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="4">Topline & Bottomline</td>
+    <td >Turnover - YoY %</td>
+    <td colspan="2"><p id="turnover_yoy" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td >EBITDA Margin</td>
+    <td ><p id="EBITDA_Margin" style="display: inline;color: black;"></p></td>
+    <td ><p id="EBITDA_Margin1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td >Gross Profir Margin</td>
+    <td ><p id="Gross_Profir_Margin" style="display: inline;color: black;"></p></td>
+    <td ><p id="Gross_Profir_Margin1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td >PAT Margin</td>
+    <td ><p id="PAT_Margin" style="display: inline;color: black;"></p></td>
+    <td ><p id="PAT_Margin1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td style="border:0"></td>
+    <td >Total Debt (Excl WCL) / EBITDA(Excl ODCC Int)</td>
+    <td ><p id="td_ebita" style="display: inline;color: black;"></p></td>
+    <td ><p id="td_ebita1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td style="border:0"></td>
+    <td colspan="1">Total Leverage</td>
+    <td ><p id="Total_Leverage" style="display: inline;color: black;"></p></td>
+    <td ><p id="Total_Leverage1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td style="border:0"></td>
+    <td >Current Ratio</td>
+    <td ><p id="Current_Ratio" style="display: inline;color: black;"></p></td>
+    <td ><p id="Current_Ratio1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td style="border:0"></td>
+    <td >Liquid Ratio</td>
+    <td ><p id="Liquid_Ratio" style="display: inline;color: black;"></p></td>
+    <td ><p id="Liquid_Ratio1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td style="border:0"></td>
+    <td >Debt/Equity</td>
+    <td ><p id="Debt_Equity" style="display: inline;color: black;"></p></td>
+    <td ><p id="Debt_Equity1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td style="border:0"></td>
+    <td >LT Debt / Total Assets</td>
+    <td ><p id="LT_Debt_Total_Assets" style="display: inline;color: black;"></p></td>
+    <td ><p id="LT_ebt_Total_Assets1" style="display: inline;color: black;"></p></td>
+  </tr>
+   <tr>
+    <td colspan="1" rowspan="5">Working Capital</td>
+    <td >Debtor Days <=6 Mths</td>
+    <td ><p id="Debtors1" style="display: inline;color: black;"></p></td>
+    <td ><p id="Debtors2" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td >Debtor Days >6 Mths</td>
+    <td ><p id="Debtors3" style="display: inline;color: black;"></p></td>
+    <td ><p id="Debtors4" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td >Creditor Days</td>
+    <td ><p id="Creditor_Days" style="display: inline;color: black;"></p></td>
+    <td ><p id="Creditor_Days1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td >Stock Days</td>
+    <td ><p id="Stock_Days" style="display: inline;color: black;"></p></td>
+    <td ><p id="Stock_Days1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td >Net Wkg Cap Cycle</td>
+    <td ><p id="Net_Wkg_Cap_Cycle" style="display: inline;color: black;"></p></td>
+    <td ><p id="Net_Wkg_Cap_Cycle1" style="display: inline;color: black;"></p></td>
+  </tr>
+   
+  <tr>
+    <td colspan="1" rowspan="7">Returns</td>
+    <td >Funds Employed to Turnover Ratio</td>
+    <td ><p id="Funds_Employed_to_Turnover_Ratio" style="display: inline;color: black;"></p></td>
+    <td ><p id="Funds_Employed_to_Turnover_Ratio1" style="display: inline;color: black;"></p></td>
+  </tr>
+  <tr>
+    <td >Returns on Funds Employed</td>
+    <td ><p id="Returns_on_Funds_Emp" style="display: inline;color: black;"></p></td>
+    <td ><p id="Returns_on_Funds_Emp1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td >Returns on Adj Net Worth</td>
+    <td ><p id="Returns_on_Adj_Net_Worth" style="display: inline;color: black;"></p></td>
+    <td ><p id="Returns_on_Adj_Net_Worth1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td >ROEC</td>
+    <td ><p id="roec1" style="display: inline;color: black;"></p></td>
+    <td ><p id="roec2" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td>Returns on Total Assets</td>
+    <td ><p id="Returns_on_Total_Assets" style="display: inline;color: black;"></p></td>
+    <td ><p id="Returns_on_Total_Assets1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+   <tr>
+    <td >ROE</td>
+    <td ><p id="roe" style="display: inline;color: black;"></p></td>
+    <td ><p id="roe1" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  <tr>
+    <td>DSCR</td>
+    <td ><p id="dscr" style="display: inline;color: black;"></p></td>
+    <td ><p id="dscr3" style="display: inline;color: black;"></p></td>
+    
+  </tr>
+  
+</table>
+
+<br><br>
+
+
+
+<table>
+    <tr>
+    <td colspan="5">ELIGIBILITY COMPUTATION - Normal Income Program</td>
+  </tr>
+  <tr>
+    <td rowspan="3" colspan="1"></td>
+    <td>Year 1</td>
+    <td>Year 2</td>
+    <td>YOY % Dip / Growth</td>
+    <td>For Eligibility Computation</td>
+  </tr>
+  <tr>
+    <td >Audited - CA certified</td>
+    <td >Audited - CA certified</td>
+    <td rowspan="2" colspan="2"></td>
+  </tr>
+  <tr>
+    <td ><p id="year1" style="display: inline;color: black;" ></p></td>
+    <td ><p id="year2" style="display: inline;color: black;" ></p></td>
+  </tr>
+  <tr>
+    <td colspan="1">Turnover</td>
+    <td ><p id="Turnover" style="display: inline;color: black;" ></p></td>
+    <td ><p id="Turnover1" style="display: inline;color: black;" ></p></td>
+    <td ><p id="year_on_year" style="display: inline;color: black;" ></p></td>
+    <td rowspan="4"></td>
+  </tr>
+  <tr>
+    <td colspan="1">NPAT</td>
+    <td ><p id="npat5" style="display: inline;color: black;" ></p></td>
+    <td ><p id="npat6" style="display: inline;color: black;" ></p></td>
+    <td rowspan="3"></td>
+  </tr>
+<tr>
+    <td colspan="1">Interest</td>
+    <td ><p id="Interest" style="display: inline;color: black;" ></p></td>
+    <td ><p id="Interest1" style="display: inline;color: black;" ></p></td>
+  </tr>
+  <tr>
+    <td colspan="1">Depreciation</td>
+    <td ><p id="Depreciation" style="display: inline;color: black;" ></p></td>
+    <td ><p id="Depreciation1" style="display: inline;color: black;" ></p></td>
+  </tr>
+  <tr>
+    <td colspan="1">Operating Profit</td>
+    <td ><p id="Operating_Profit3" style="display: inline;color: black;" ></p></td>
+    <td ><p id="Operating_Profit4" style="display: inline;color: black;" ></p></td>
+    <td ><p id="yoy_growth" style="display: inline;color: black;" ></td>
+    <td ><p id="operating_Profit_cons" style="display: inline;color: black;" ></td>
+  </tr>
+  <tr>
+    <td >Monthly Income</td>
+    <td rowspan="6" colspan="3"></td>
+    <td ><p id="monthly_Income1" style="display: inline;color: black;" ></td>
+  </tr>
+  <tr>
+    <td >Applicable DSCR</td>
+    <td ><p id="applicable_dscr" style="display: inline;color: black;" ></p></td>
+  </tr>
+  <tr>
+    <td >Gross Eligible Income</td>
+    <td ><p id="gross_Eligible_Income1" style="display: inline;color: black;" ></p></td>
+  </tr>
+  <tr>
+    <td >Less: Existing Obligations</td>
+    <td ><input id = "obligation1" type="number" name="wage_exp" class="form_apply form-control"  /></td>
+  </tr>
+  <tr>
+    <td >Net Eligible Income</td>
+    <td ><p id="Net_Eligible_Income" style="display: inline;color: black;" ></p></td>
+  </tr>
+  <tr>
+    <td >Loan Eligibility as per DSCR</td>
+    <td ><p id="Loan_Eligibility_dscr" style="display: inline;color: black;" ></p></td>
+  </tr>
+   <tr>
+    <td colspan="1">Rate</td>
+    <td>Tenure</td>
+    <td style="border:0"></td>
+    <td style="border:0"></td>
+    <td style="border:0"></td>
+
+  </tr>
+  <tr>
+    <td colspan="1"><input id = "rate" type="number" name="wage_exp" class="form_apply form-control"  /></td>
+    <td><input id = "tenure" type="number" name="wage_exp" class="form_apply form-control"  /></td>
+    <td style="border:0"></td>
+    <td style="border:0"></td>
+    <td style="border:0"></td>
+  </tr>
+</table>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<script type="text/javascript" src="eligibility_and_ratios.js"></script>
+
+
+
+
+</body>
+</html>

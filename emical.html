@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+           
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Hachi.png">
+    
+       <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> 
+    
+    <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+    
+    <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+  
+              <!--Remix Icon CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+        <!-- Font Lineicons -->
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  
+    <!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    
+    <!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+    
+    <!-- Animate Text -->
+        <link rel="stylesheet" href="css/animate-text.css">
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Sufia StyleShet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/reset.css">  
+        <link rel="stylesheet" href="css/responsive.css"> 
+    
+    <!-- Maheraj Template Color -->
+    <link rel="stylesheet" href="css/color/color1.css">
+    
+
+  
+    <link rel="stylesheet" href="#" id="colors">  
+
+
+
+    <!-- Start Header -->
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <!-- Logo -->
+            <div class="logo">
+              
+            </div>
+            <!--/ End Logo -->
+
+            <div class="mobile-nav"></div>
+          </div>
+
+
+        <div class="col-md-30 col-sm-0 col-xs-0">
+            <div class="nav-area">
+
+              <!-- Main Menu -->
+              <nav class="mainmenu">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav menu">
+                     <li><a class="active"  href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="Financial.html"><i class="fa fa-rocket"></i>Propfit & Loss and Balance Sheet</a></li>
+                    <li><a href="SUMMARY_OF_FINANCIAL_STATEMENT.html"/><i class="fa fa-briefcase"></i>Cash Flow and Financial Summary</a></li>
+                    <li><a href="eligibility_and_ratios.html"><i class="fa fa-history"></i>Eligibility and Accounting Ratios</a></li>
+                    <li><a ><i class="fa fa-star"></i>EMI Calculation</a></li>  
+                  </ul>
+                  </div>
+              </nav>
+              <!--/ End Main Menu -->
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ End Header -->
+
+
+
+    </head>
+
+
+
+
+<body>                                  
+
+
+
+
+
+
+
+
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<style>
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$color-alpha: #1772FF;
+$color-form-highlight: #EEEEEE;
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+.container {
+    max-width: auto;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.table {
+    width:75%;
+    border:5px solid $ color-form-highlight;
+}
+
+.table-header {
+    display:flex;
+    width:100%;
+    background:#313636;
+    padding: 2px;
+    border-radius: 5px ;
+    line-height: 1.428571429;
+    text-align: center;
+}
+
+.table-row {
+    display:flex;
+    width: 100%;
+    padding: 2px;
+    
+}
+
+.table-data,.header__item {
+    flex: 1 1 20%;
+    text-align:center;
+}
+
+.header__item {
+    text-transform:uppercase;
+}
+
+.filter__link {
+
+    color:white;
+    text-decoration: none;
+    position:relative;
+    display:inline-block;
+    padding-left:$base-spacing-unit;
+    padding-right:$base-spacing-unit;
+    
+}
+
+.table-data{
+
+  display:flex;
+    width:120%;
+    background:#979A9A;
+    padding: 2px;
+    border-color:#313636 ;
+    border: 1px solid transparent;
+    border-radius: 8px 8px 8px 8px;
+    line-height: 1.428571429;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.table-data1{
+
+  display:flex;
+    width:50%;
+    background:#D0D3D4;
+    padding: 2px;
+    border-color:#2E4053 ;
+    border: 3px solid transparent;
+    border-radius: 8px 8px 8px 8px;
+    line-height: 1.428571429;
+    justify-content:center;
+    align-items:center;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 400px;
+  
+}
+
+</style>
+
+ <section id="personal-area3">
+    
+<div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+			<div class="header__item"><a id="name" ><h2 style = "color:white;">EMI Calculation</h2></a></div>		
+		</div>
+    <br>
+
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data">Loan Amount</div>
+				<input id = "Loan_amount" type="number"  class="table-data1" />
+				
+			</div>
+			<div class="table-row">
+				<div class="table-data">Rate</div>
+				<input id = "rate" type="number"  class="table-data1" />
+			
+			</div>
+			<div class="table-row">
+				<div class="table-data">Tenure</div>
+				<input id = "tenure" type="number"  class="table-data1" />
+			
+			</div>
+			<div class="table-row">
+				<div class="table-data">EMI Amount</div>
+				<input id = "emi" type="number"  class="table-data1" />
+			</div>
+			<div class="table-row">
+				<div class="table-data">Total Amount</div>
+				<input id = "ta" type="number"  class="table-data1" />
+			</div>
+			<div class="table-row">
+				<div class="table-data">Total Interest Amount</div>
+				<input id = "tint" type="number"  class="table-data1" />
+			</div>
+
+			<br><br>
+
+
+		</div>	
+	</div>
+</div>
+
+
+
+<div id="chartdiv"></div>
+
+
+<script>
+document.querySelectorAll('.table-data1').forEach(item => {
+  item.addEventListener('input', event => {
+    calculateemi();
+    calculate();
+    aaa();
+  })
+})
+
+
+
+
+
+function calculateemi() { 
+    var princ1= document.getElementById('Loan_amount').value; 
+    var term1= document.getElementById('tenure').value;
+    var intr1=document.getElementById('rate').value / 1200;
+    var pay1 = Math.round(princ1 * intr1 / (1-(Math.pow(1/(1 + intr1), term1)))*100)/100;
+   
+    document.getElementById('emi').value = pay1;
+
+
+
+}
+ 
+function calculate() {
+   
+    var principal = document.getElementById('Loan_amount').value;
+    var interest = document.getElementById('rate').value / 1200;
+    var payments = document.getElementById('tenure').value;
+    var x = Math.pow(1 + interest, payments);
+
+    // Now compute the monthly payment figure, using esoteric math.
+    var monthly = Math.round(principal * interest / (1-(Math.pow(1/(1 + interest), payments)))*100)/100;
+
+
+
+
+    
+    // Check that the result is a finite number. If so, display the results.
+        var total_payment = round(monthly * payments);
+        var total_interest = round((monthly * payments) - principal);
+        document.getElementById('ta').value = total_payment;
+        document.getElementById('tint').value = total_interest;
+       
+}
+
+function round(x) {
+  return Math.round(x*100)/100;
+}
+
+function aaa(){
+   var p = parseInt(document.getElementById("tint").value) || 0;
+	if (p<=0) { 
+		return 0;
+}
+	else 	
+
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+
+
+ var principal = document.getElementById('Loan_amount').value;
+    var interest = document.getElementById('rate').value / 1200;
+    var payments = document.getElementById('tenure').value;
+    var x = Math.pow(1 + interest, payments);
+
+    // Now compute the monthly payment figure, using esoteric math.
+    var monthly = Math.round(principal * interest / (1-(Math.pow(1/(1 + interest), payments)))*100)/100;
+
+    // Check that the result is a finite number. If so, display the results.
+        var total_payment = round(monthly * payments);
+        var total_interest = round((monthly * payments) - principal);
+        var total_principal = total_payment - total_interest;
+
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add data
+chart.data = [ {
+  "b": "Total Interest",
+  "a": total_interest
+}, {
+  "b": "Total Principal",
+  "a": total_principal
+}];
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "a";
+pieSeries.dataFields.category = "b";
+pieSeries.slices.template.stroke = am4core.color("#fff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
+
+// This creates initial animation
+pieSeries.hiddenState.properties.opacity = 1;
+pieSeries.hiddenState.properties.endAngle = -90;
+pieSeries.hiddenState.properties.startAngle = -90;
+
+}); // end am4core.ready()
+
+}
+
+</script>
+
+
+  </section>
+
+
+</body>
+</html>
